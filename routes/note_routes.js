@@ -7,11 +7,11 @@ module.exports = function(app, db) {
     translate(req.params.string, {to: 'en'}).then(result => {
     console.log(result.text);
     translated = result.text;
+    console.log(translated);
 }).catch(err => {
     console.error(err);
-});
+})
     res.send(translated);
    //res.send('Translator will convert '+req.params.string+' from ' + req.params.source + ' to ' + req.params.target);
   });
 };
- 
