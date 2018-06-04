@@ -1,0 +1,20 @@
+{
+  "name": "translator",
+  "version": "1.0.0",
+  "description": "This small application will integrate the google translate api to create a simple translator api in your local",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vamsi Ravi",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "google-translate-api": "^2.3.0",
+    "mongodb": "^3.0.10"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.5"
+  }
+}
