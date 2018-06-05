@@ -11,7 +11,7 @@ module.exports = function(app, db) {
     // console.log(req.body);
     const translate = require( 'google-translate-api');
 
-    translate(req.params.string, {to: 'en'}).then(result =>{
+    translate(req.params.string, {from: req.params.source, to: req.params.target}).then(result =>{
     console.log(result.text);
     translated = result.text;
 }
