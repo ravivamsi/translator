@@ -5,6 +5,10 @@ module.exports = function(app, db) {
 
   app.post('/translate/:string/from/:source/to/:target', (req, res) => {
 
+    //     var requestBody = req.body;
+    // console.log(requestBody);
+    // console.log('---------------------');
+    // console.log(req.body);
     const translate = require( 'google-translate-api');
 
     translate(req.params.string, {to: 'en'}).then(result =>{
